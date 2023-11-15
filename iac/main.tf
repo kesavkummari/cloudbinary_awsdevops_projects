@@ -36,3 +36,18 @@ resource "aws_instance" "cloudbinary_jenkins" {
     CreatedBy = "Terraform"
   }
 }
+
+# Continuous Integration - Jenkins
+resource "aws_instance" "cloudbinary_sonarqube" {
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = var.key_name
+  subnet_id              = var.subnet_id
+  vpc_security_group_ids = ["sg-0ad9e2e746e28693b"]
+  iam_instance_profile   = var.iam_instance_profile
+  user_data              = file("sonarqube.sh")
+  tags = {
+    Name      = "cloudbinary_sonarqube"
+    CreatedBy = "Terraform"
+  }
+}
