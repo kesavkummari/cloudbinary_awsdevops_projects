@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aws.codestar.projecttemplates</groupId>
     <artifactId>cloudbinary</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <!--<version>9.10.3-SNAPSHOT</version>-->
     <packaging>war</packaging>
     <name>Cloud Binary - Sample Spring MVC Application</name>
@@ -14,7 +14,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <sonar.host.url>http://18.206.176.220:9000</sonar.host.url>
+        <sonar.host.url>http://54.152.205.68:9000</sonar.host.url>
         <sonar.organization>cloudbinaryio</sonar.organization>
         <sonar.projectKey>cloudbinaryio</sonar.projectKey>
         <sonar.login>sqp_ee60244f58bb57abe4bccfbcf177a686037bf14a</sonar.login>
@@ -23,21 +23,21 @@
     </properties>
 
        
-<!-- <distributionManagement>
+<distributionManagement>
 
     <repository>
         <id>release</id>
-        <name>libs-release-local</name>
-        <url>http://34.224.2.238:8082/artifactory/libs-release-local/</url>
+        <name>cb-libs-release-local</name>
+        <url>http://54.144.102.195:8082/artifactory/cb-libs-release-local/</url>
     </repository>
 
     <snapshotRepository>
         <id>snapshots</id>
-        <name>libs-snapshot-local</name>
-        <url>http://34.224.2.238:8082/artifactory/libs-snapshot-local/</url>
+        <name>cb-libs-snapshots-local</name>
+        <url>http://54.144.102.195:8082/artifactory/cb-libs-snapshots-local/</url>
     </snapshotRepository>
 
-</distributionManagement> -->
+</distributionManagement>
 
     
     <dependencies>
